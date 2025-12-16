@@ -1,6 +1,6 @@
 function shortcut(s1, s2) {
   // your code here
-	if(s1.length==0 && s2.length==0)
+	if(s1.length==0 || s2.length==0)
 {
     console.log("");
     return;
@@ -8,7 +8,8 @@ function shortcut(s1, s2) {
 else
 {
     // let ans=s1.charCodeAt(0)+s2.charCodeAt(0);
-    console.log(s1.charCodeAt(0),s2.charCodeAt(0));
+    let ans=s1.charAt(0)+s2.charAt(0);
+	return ans;
 }
 }
 
